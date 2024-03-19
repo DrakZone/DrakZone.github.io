@@ -144,6 +144,15 @@ layout: home
         <section id="projects" class="section">
             <h2>Projects</h2>
             <div class="project">
+                <h3><a href="DirectX11_Lighting_blog.html" class="project-link">DirectX11 Lighting</a></h3>
+                <p>Learning how to code different type of lighting using DirectX11 in the Vertex and Pixel Shader.</p>
+                <div class="github-card">
+                    <a href="https://github.com/DrakZone/DirectX11_Lighting">
+                        <img src="https://gh-card.dev/repos/DrakZone/DirectX11_Lighting.svg" alt="DrakZone/DirectX11_Lighting - GitHub">
+                    </a>
+                </div>
+            </div>
+            <div class="project">
                 <h3><a href="opengl_triangle_blog.html" class="project-link">OpenGL Triangle</a></h3>
                 <p>OpenGL Triangle is a project showcasing the basics of rendering a simple triangle using OpenGL in C++. It's a fundamental step in understanding graphics programming.</p>
                 <div class="github-card">

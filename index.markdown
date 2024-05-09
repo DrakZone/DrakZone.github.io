@@ -138,7 +138,7 @@ layout: home
     <div class="container">
         <section id="about" class="section">
             <h2>About Me</h2>
-            <p>I'm a passionate student of computer science with a focus on game development going to graduate this september.</p>
+            <p>I’m an international student aspire to be part of the world of computers in this age of technology. I strive to create somthing that would impact someone's everyday life. </p>
         </section>
 
         <section id="projects" class="section">

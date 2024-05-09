@@ -138,44 +138,31 @@ layout: home
     <div class="container">
         <section id="about" class="section">
             <h2>About Me</h2>
-            <p>I'm a passionate student of computer science with a focus on game development. My goal is to create immersive and engaging gaming experiences by combining my technical skills with my love for gaming.</p>
+            <p>I'm a passionate student of computer science with a focus on game development going to graduate this september.</p>
         </section>
 
         <section id="projects" class="section">
             <h2>Projects</h2>
-            <div class="project">
-                <h3><a href="DirectX11_Lighting_blog.html" class="project-link">DirectX11 Lighting</a></h3>
-                <p>Learning how to code different type of lighting using DirectX11 in the Vertex and Pixel Shader.</p>
+            {% for project in site.categories.Projects %}
+
+             <div class="project">
+                <h3><a href="{{ project.url }}" class="project-link">{{ project.title }}</a></h3>
+                <p>{{ project.description }}</p>
                 <div class="github-card">
-                    <a href="https://github.com/DrakZone/DirectX11_Lighting">
-                        <img src="https://gh-card.dev/repos/DrakZone/DirectX11_Lighting.svg" alt="DrakZone/DirectX11_Lighting - GitHub">
+                    <a href="{{ project.repository }}">
+                        <img src="https://gh-card.dev/repos/{{ project.repository | remove: 'https://github.com/' }}.svg"/>
                     </a>
                 </div>
             </div>
-            <div class="project">
-                <h3><a href="opengl_triangle_blog.html" class="project-link">OpenGL Triangle</a></h3>
-                <p>OpenGL Triangle is a project showcasing the basics of rendering a simple triangle using OpenGL in C++. It's a fundamental step in understanding graphics programming.</p>
-                <div class="github-card">
-                    <a href="https://github.com/DrakZone/OpenGLTriangle">
-                        <img src="https://gh-card.dev/repos/DrakZone/OpenGLTriangle.svg" alt="DrakZone/OpenGLTriangle - GitHub">
-                    </a>
-                </div>
-            </div>
-            <div class="project">
-                <h3><a href="game_jam_sfml_blog.html" class="project-link">Simple 2D Game in SFML</a></h3>
-                <p>This project is a simple 2D game created using SFML. It demonstrates basic game development concepts and showcases my skills in game programming.</p>
-                <div class="github-card">
-                    <a href="https://github.com/DrakZone/GameJamSFML">
-                        <img src="https://gh-card.dev/repos/DrakZone/GameJamSFML.svg" alt="DrakZone/GameJamSFML - GitHub">
-                    </a>
-                </div>
-            </div>
+
+            {% endfor %}
+           
         </section>
 
         <section id="cv" class="section">
             <h2>Curriculum Vitae</h2>
             <p>You can download my CV below:</p>
-            <p><a href="https://github.com/DrakZone/CV/raw/main/your-cv-file-name.pdf" class="cv-link" target="_blank">Download CV</a></p>
+            <p><a href="https://github.com/DrakZone/CV" class="cv-link" target="_blank">Download CV</a></p>
         </section>
 
         <section id="contact" class="section">
